@@ -1,0 +1,23 @@
+{{!-- Login Page for returning user --}}
+
+
+<div class="text-center" style="max-width: 500px; margin: auto;">
+	<h1 class="h3 mb-3 font-weight-normal">Login</h1>
+
+	<form>
+		<div class="form-group mb-3">
+			<input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+		</div>
+		<div class="form-group mb-3">
+			<input type="password" class="form-control" id="password" placeholder="Enter password" required>
+		</div>
+		<input type="button" class="btn btn-primary" value="Login" onclick="submitLoginForm()" />
+	</form>
+
+	<br />
+	<br />
+	<p>New User? <a href="/register">Register</a></p>
+</div>
+
+
+<script type="text/javascript" src="/javascripts/login.js"></script>

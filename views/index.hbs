@@ -1,0 +1,23 @@
+{{!--
+	This page will just redirect to
+		/welcome (if user is logged in already)
+	or
+		/login (if user is not logged in)
+--}}
+
+
+<script type="text/javascript">
+
+	$(document).ready(function () {
+		var token = checkLogin();
+
+	    if (token == "") {
+	    	deleteCookies();
+	    	window.location = "/login";
+	    }
+	    else {
+		    window.location = "/welcome";
+	    }
+	});
+	
+</script>
